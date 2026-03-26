@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <rect id="card" x="-100" y="-100" width="200" height="200" rx="25" ry="25" />
+  </defs>
+  
+  <g transform="translate(256, 256)">
+    <g transform="translate(0, 80) scale(1, 0.58)">
+      <use href="#card" transform="rotate(45)" fill="#FFAD33" />
+    </g>
+
+    <g transform="translate(0, 0) scale(1, 0.58)">
+      <use href="#card" transform="rotate(45)" fill="#FFC980" />
+    </g>
+
+    <g transform="translate(0, -80) scale(1, 0.58)">
+      <use href="#card" transform="rotate(45)" fill="#FFDDB3" />
+    </g>
+  </g>
+</svg>

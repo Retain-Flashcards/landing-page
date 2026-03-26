@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.ico">
+    <title>Retain - Privacy Policy</title>
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Retain - Privacy Policy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/og-image.png" />
+    <meta property="og:url" content="https://retaincards.com/privacy-policy" />
+    <meta property="og:description" content="A powerful and aesthetic flashcard learning app." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* CSS VARIABLES FOR EASY CUSTOMIZATION 
+           Change --primary to your brand's main color. 
+           The Tailwind config below allows you to use it as a standard utility class (e.g., bg-primary).
+        */
+        :root {
+            --primary: #ffad33;
+            /* Indigo-500 placeholder */
+            --primary-hover: #e99e2e;
+            --primary-light: #ffedd3;
+
+            --bg-page: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+
+            /* Vibrant deck colors for the UI section mockup */
+            --deck-1: #ec4899;
+            --deck-2: #14b8a6;
+            --deck-3: #f59e0b;
+            --deck-4: #8b5cf6;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .bg-primary {
+            background-color: var(--primary);
+        }
+
+        .hover\:bg-primary-hover:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .border-primary {
+            border-color: var(--primary);
+        }
+
+        .bg-primary-light {
+            background-color: var(--primary-light);
+        }
+
+        /* Custom shapes for mockups */
+        .mockup-web {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        .mockup-web-header {
+            background: #f1f5f9;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            gap: 6px;
+        }
+
+        .mockup-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #cbd5e1;
+        }
+
+        .mockup-mobile {
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border: 6px solid #1e293b;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mockup-mobile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 16px;
+            background: #1e293b;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            z-index: 10;
+        }
+
+        .legal-document {
+            max-width: 65ch;
+            /* Optimal reading width */
+            margin: 0 auto;
+            padding: 4rem 1.5rem 6rem 1.5rem;
+        }
+
+        .legal-document h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+        }
+
+        .legal-document h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .legal-document h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-document p {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .legal-document ul,
+        .legal-document ol {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            margin-left: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .legal-document ul {
+            list-style-type: disc;
+        }
+
+        .legal-document ol {
+            list-style-type: decimal;
+        }
+
+        .legal-document li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-document a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-decoration-color: var(--primary-light);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .legal-document a:hover {
+            color: var(--primary-hover);
+            text-decoration-color: var(--primary);
+        }
+
+        .legal-document strong {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .legal-document hr {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 3rem 0;
+        }
+
+        .legal-document .last-updated {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-50">
+        <a href="/" class="flex items-center gap-2">
+            <img src='../assets/RetainLogo.svg' alt="Retain Logo" height='50' width='50'>
+            <span class="font-bold text-xl tracking-tight">Retain</span>
+        </a>
+        <div class="hidden md:flex gap-6 items-center">
+            <a href="../#features"
+                class="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]">Features</a>
+            <a href="../#pricing"
+                class="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]">Pricing</a>
+            <a target='_blank' href="https://app.retaincards.com/login"
+                class="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]">Log In</a>
+            <a target='_blank' href="https://app.retaincards.com/register"
+                class="text-sm font-medium bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-full transition-colors">Start
+                for Free</a>
+        </div>
+    </nav>
+    <!-- Main Content Wrapper for Raw HTML -->
+    <main class="legal-document flex-grow bg-white w-full rounded-t-3xl border-t border-slate-200 shadow-sm mt-8">
+
+        <!-- PASTE RAW HTML BELOW THIS LINE -->
+
+        <h1>Privacy Policy</h1>
+        <span class="last-updated">Last Updated: March 18, 2026</span>
+
+        <p>At Retain, we understand that privacy is important. This privacy policy applies to our web and mobile app,
+            Retain, and explains how we collect, use, and share information about you when you use our services.
+
+            By using Retain, you agree to the collection, use, and sharing of your information as described in this
+            policy. If you do not agree with our policies and practices, do not use our services.</p>
+
+        <h2>Information We Collect</h2>
+        <p>We collect information about you when you use Retain. This includes:
+        <ul>
+            <li>Information you provide to us: When you create an account or profile on Retain, we may ask you to
+                provide personal information such as your name, email address, and phone number. If you contact us for
+                support or with questions, we may also collect information about you in order to assist you.</li>
+            <li>Information we collect automatically: When you use Retain, we may collect certain information
+                automatically, such as your IP address, device type, and operating system. We may also collect
+                information about your use of Retain, including the actions you take, the pages you visit, and the time
+                you spend on the app.</li>
+        </ul>
+        </p>
+
+        <h2>Use of Your Information</h2>
+        <p>We use the information we collect about you to provide, maintain, and improve our services. This may include:
+
+            Creating and managing your account: We use your information to create and manage your Retain account, and to
+            enable you to use the app.
+
+            Personalizing your experience: We may use your information to personalize your experience on Retain, such as
+            by showing you content that is relevant to your interests.
+
+            Improving our services: We may use your information to understand how people use Retain and to improve the
+            app.</p>
+
+        <h2>Sharing of Your Information</h2>
+        <p>We do not share your personal information with third parties for their own marketing purposes. However, we
+            may share your information with third parties in the following circumstances:
+        <ul>
+            <li>With your consent: We may share your information with third parties if you have given us your consent to
+                do
+                so.</li>
+
+            <li>For legal reasons: We may share your information if we believe it is necessary to comply with a legal
+                obligation, such as a court order or subpoena.</li>
+
+            <li>To protect the rights and safety of others: We may share your information if we believe it is necessary
+                to
+                prevent harm to others.</li>
+
+            <li>With service providers: We may share your information with third party service providers who perform
+                services on our behalf, such as hosting, data analysis, and payment processing. These service providers
+                are
+                contractually obligated to only use your information as necessary to provide the services they are
+                performing for us.</li>
+        </ul>
+        </p>
+
+        <h2>Data Retention and Deletion</h2>
+        <p>We will retain your information for as long as your account is active or as needed to provide you with our
+            services. If you wish to delete your account or request that we no longer use your information to provide
+            you with our services, please contact us at info@retaincards.com. We will retain and use your information as
+            necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update our privacy policy from time to time. We will post any changes on this page and encourage you
+            to review the policy periodically. If we make significant changes to our policy, we may also provide
+            additional notice, such as by sending an email notification or displaying a notice on the app.</p>
+
+        <hr>
+
+        <p>If you have any questions regarding these terms, please contact me at <a
+                href="mailto:info@retaincards.com">info@retaincards.com</a>.</p>
+
+        <!-- PASTE RAW HTML ABOVE THIS LINE -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2 text-white mb-4">
+                    <img src='../assets/RetainLogo.svg' alt="Retain Logo" height='50' width='50'>
+                    <span class="font-bold text-xl tracking-tight">Retain</span>
+                </div>
+                <p class="mb-6 max-w-sm">Ready to Retain more and stress less? Join the thousands of medical students
+                    upgrading their study workflow.</p>
+                <a href="https://app.retaincards.com/register"
+                    class="inline-block bg-white text-slate-900 font-medium px-6 py-3 rounded-lg hover:bg-slate-100 transition-colors">Create
+                    Free Account</a>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Product</h4>
+                <ul class="space-y-2">
+                    <li><a href="../#features" class="hover:text-white transition-colors">Features</a></li>
+                    <li><a href="../#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="mailto:info@retaincards.com" class="hover:text-white transition-colors">Support</a>
+                    </li>
+                    <li><a href="../terms-of-service/" class="hover:text-white transition-colors">Terms of Service</a>
+                    </li>
+                    <li><a href="./" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-sm text-center md:text-left">
+            &copy; 2026 Caleb Hester. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

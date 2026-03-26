@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.ico">
+    <title>Retain - Terms of Service</title>
+
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Retain - Terms of Service" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/og-image.png" />
+    <meta property="og:url" content="https://retaincards.com/terms-of-service" />
+    <meta property="og:description" content="A powerful and aesthetic flashcard learning app." />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* CSS VARIABLES FOR EASY CUSTOMIZATION 
+           Change --primary to your brand's main color. 
+           The Tailwind config below allows you to use it as a standard utility class (e.g., bg-primary).
+        */
+        :root {
+            --primary: #ffad33;
+            /* Indigo-500 placeholder */
+            --primary-hover: #e99e2e;
+            --primary-light: #ffedd3;
+
+            --bg-page: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+
+            /* Vibrant deck colors for the UI section mockup */
+            --deck-1: #ec4899;
+            --deck-2: #14b8a6;
+            --deck-3: #f59e0b;
+            --deck-4: #8b5cf6;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .bg-primary {
+            background-color: var(--primary);
+        }
+
+        .hover\:bg-primary-hover:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .border-primary {
+            border-color: var(--primary);
+        }
+
+        .bg-primary-light {
+            background-color: var(--primary-light);
+        }
+
+        /* Custom shapes for mockups */
+        .mockup-web {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        .mockup-web-header {
+            background: #f1f5f9;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            gap: 6px;
+        }
+
+        .mockup-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #cbd5e1;
+        }
+
+        .mockup-mobile {
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border: 6px solid #1e293b;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mockup-mobile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 16px;
+            background: #1e293b;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            z-index: 10;
+        }
+
+        .legal-document {
+            max-width: 65ch;
+            /* Optimal reading width */
+            margin: 0 auto;
+            padding: 4rem 1.5rem 6rem 1.5rem;
+        }
+
+        .legal-document h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+        }
+
+        .legal-document h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .legal-document h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-document p {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .legal-document ul,
+        .legal-document ol {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            margin-left: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .legal-document ul {
+            list-style-type: disc;
+        }
+
+        .legal-document ol {
+            list-style-type: decimal;
+        }
+
+        .legal-document li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-document a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-decoration-color: var(--primary-light);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .legal-document a:hover {
+            color: var(--primary-hover);
+            text-decoration-color: var(--primary);
+        }
+
+        .legal-document strong {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .legal-document hr {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 3rem 0;
+        }
+
+        .legal-document .last-updated {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-50">
+        <a href='/' class="flex items-center gap-2">
+            <img src='../assets/RetainLogo.svg' alt="Retain Logo" height='50' width='50'>
+            <span class="font-bold text-xl tracking-tight">Retain</span>
+        </a>
+        <div class="hidden md:flex gap-6 items-center">
+            <a href="../#features"
+                class="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]">Features</a>
+            <a href="../#pricing"
+                class="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]">Pricing</a>
+            <a target='_blank' href="https://app.retaincards.com/login"
+                class="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text-main)]">Log In</a>
+            <a target='_blank' href="https://app.retaincards.com/register"
+                class="text-sm font-medium bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-full transition-colors">Start
+                for Free</a>
+        </div>
+    </nav>
+    <!-- Main Content Wrapper for Raw HTML -->
+    <main class="legal-document flex-grow bg-white w-full rounded-t-3xl border-t border-slate-200 shadow-sm mt-8">
+
+        <!-- PASTE RAW HTML BELOW THIS LINE -->
+
+        <h1>Terms of Service</h1>
+        <span class="last-updated">Last Updated: March 18, 2026</span>
+
+        <p>Welcome to Retain! These terms of service (the "Terms") govern your access and use of our web and mobile app,
+            Retain (the "App"), and the services and features we offer (the "Services"). By accessing or using the App
+            or Services, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App or
+            Services.
+
+            Eligibility
+
+            You must be at least 13 years old to use the App or Services. By using the App or Services, you represent
+            and warrant that you are at least 13 years old and that you have the right, authority, and capacity to enter
+            into and abide by these Terms.</p>
+
+        <h2>Account Registration</h2>
+        <p>To use certain features of the App or Services, you may be required to create an account and provide certain
+            personal information, such as your name, email address, and phone number. You are responsible for
+            maintaining the confidentiality of your account and password and for all activities that occur under your
+            account. You agree to immediately notify us of any unauthorized use of your account or password. We are not
+            liable for any loss or damage arising from your failure to comply with this requirement.</p>
+
+        <h3>Content</h3>
+
+        <p>The App and Services may allow you to create and share content, such as flashcards and study notes. You are
+            solely responsible for the content you create and share using the App and Services, and you agree that you
+            will
+            not post any content that is unlawful, abusive, threatening, defamatory, obscene, or otherwise
+            inappropriate. We
+            have the right, but not the obligation, to remove any content that violates these Terms or that we determine
+            is
+            otherwise inappropriate.
+
+            By posting content on the App or Services, you grant us a non-exclusive, royalty-free, perpetual,
+            irrevocable,
+            and fully sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works
+            from, distribute, and display your content throughout the world in any media. You represent and warrant that
+            you
+            have the right to grant this license and that your content does not infringe the intellectual property
+            rights of
+            any third party.
+        </p>
+
+        <h2>Copyright</h2>
+        <p>The App and Services, and the materials included on them, are the property of Retain or our licensors and are
+            protected by copyright and other intellectual property laws. You may view and use the App and Services for
+            your personal, non-commercial use only. You may not use the App or Services for any other purpose without
+            the prior written consent of Retain.
+
+            Modification of the App and Services
+
+            We reserve the right to modify or discontinue the App or Services, or any features or functionality thereof,
+            at any time and without notice. We will not be liable to you or any third party for any modification,
+            suspension, or discontinuance of the App or Services.</p>
+
+        <h2>Termination</h2>
+        <p>We may terminate these Terms or your access to the App or Services at any time and for any reason, without
+            notice. Upon termination, you will no longer have access to the App or Services and we will have no further
+            obligations to you. The provisions of these Terms that by their nature should survive termination will
+            survive termination, including, but not limited to, the provisions regarding intellectual property,
+            indemnification, and limitations of liability.
+
+
+        </p>
+
+        <h2>Disclaimer of Warranties</h2>
+        <p>THE APP AND SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS
+            OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
+            INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+        </p>
+
+        <h2>Limitation of Liability</h2>
+        <p>IN NO EVENT WILL WE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+            DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA, OR LOSS OF GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE,
+            OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE PRODUCTS OR SERVICES, OR FOR ANY DAMAGES FOR PERSONAL OR BODILY
+            INJURY OR EMOTIONAL DISTRESS ARISING OUT OF OR IN CONNECTION WITH THESE TERMS, FROM THE USE OF OR INABILITY
+            TO USE THE APP OR SERVICES, OR FROM ANY COMMUNICATIONS, INTERACTIONS, OR MEETINGS WITH OTHER USERS OF THE
+            APP OR SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, OR ANY
+            OTHER LEGAL THEORY, AND WHETHER OR NOT WE HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A
+            LIMITED REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.</p>
+
+
+        <h2>Indemnification</h2>
+        <p>You agree to indemnify and hold us, and our affiliates, officers, agents, and employees, harmless from any
+            claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of your
+            breach of these Terms or the documents they incorporate by reference, or your violation of any rights of
+            another.</p>
+
+        <h2>Governing Law</h2>
+        <p>These Terms and your use of the App and Services will be governed by and construed in accordance with the
+            laws of the State of California, without giving effect to any principles of conflicts of law. Any legal
+            action or proceeding arising under these Terms will be brought exclusively in the federal or state courts
+            located in California. You and we irrevocably consent to the jurisdiction of such courts and waive any venue
+            or other objections to such courts.</p>
+
+        <h2>Severability</h2>
+        <p>If any provision of these Terms is found to be invalid or unenforceable, that provision will be enforced to
+            the maximum extent possible, and the remaining provisions will remain in full force and effect.</p>
+
+        <h2>Waiver</h2>
+        <p>Our failure to exercise or enforce any right or provision of these Terms will not constitute a waiver of such
+            right or provision.</p>
+
+        <h2>Entire Agreement</h2>
+        <p>These Terms, together with the Privacy Policy, constitute the entire agreement between you and us and govern
+            your use of the App and Services, superseding any prior agreements or understandings, whether oral or
+            written.</p>
+        </p>
+
+        <hr>
+
+        <p>If you have any questions regarding these terms, please contact me at <a
+                href="mailto:info@retaincards.com">info@retaincards.com</a>.</p>
+
+        <!-- PASTE RAW HTML ABOVE THIS LINE -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2 text-white mb-4">
+                    <img src='../assets/RetainLogo.svg' alt="Retain Logo" height='50' width='50'>
+                    <span class="font-bold text-xl tracking-tight">Retain</span>
+                </div>
+                <p class="mb-6 max-w-sm">Ready to Retain more and stress less? Join the thousands of medical students
+                    upgrading their study workflow.</p>
+                <a href="https://app.retaincards.com/register"
+                    class="inline-block bg-white text-slate-900 font-medium px-6 py-3 rounded-lg hover:bg-slate-100 transition-colors">Create
+                    Free Account</a>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Product</h4>
+                <ul class="space-y-2">
+                    <li><a href="../#features" class="hover:text-white transition-colors">Features</a></li>
+                    <li><a href="../#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="mailto:info@retaincards.com" class="hover:text-white transition-colors">Support</a>
+                    </li>
+                    <li><a href="./" class="hover:text-white transition-colors">Terms of Service</a>
+                    </li>
+                    <li><a href="../privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-sm text-center md:text-left">
+            &copy; 2026 Caleb Hester. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
